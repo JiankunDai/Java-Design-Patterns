@@ -52,7 +52,7 @@
 + [Prototype](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Prototype)
 + [Builder](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Builder)
 ### 对象性能：
-+ [Singleton](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Singleton)
++ [Singleton1](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Singleton1)
 + [Flyweight(享元模式)](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Flyweight)
 ### 接口隔离:
 + [Façade(门面模式)](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Facade)
@@ -83,3 +83,6 @@
 + Command
 + Visitor
 + Interpreter
+
+### 参考书籍 reference
++ Head First 设计模式（中文版）
