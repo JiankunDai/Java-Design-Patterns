@@ -4,7 +4,7 @@
 public class Singleton {
 
     /**
-     * 懒汉模式
+     * 懒加载模式LazyLoaded
      */
     private static Singleton uniqueInstance;
 
