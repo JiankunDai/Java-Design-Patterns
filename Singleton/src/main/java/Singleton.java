@@ -45,12 +45,18 @@ class Singleton2 {
 
 
 /**
- * 双重校验锁模式，线程安全
+ * 双重校验锁模式，使用volatile修饰后线程安全
  */
 class Singleton3 {
 
     /**
-     * 懒汉模式
+     * 使用volatile关键字修饰uniqueInstance变量，消除指令重排序，
+     * 即发生在 创建对象时 uniqueInstance = new Singleton3() 分为三步
+     * 1.分配内存
+     * 2.调用构造器
+     * 3.将内存地址返回给uniqueInstance
+     * 若不加volatile会发生指令重排序reorder，也就是线程A没有正确初始化uniqueInstance对象，却给他分配了内存地址
+     * 此时线程B若要调用getInstance()方法，经过第一步判断会得到uniqueInstance != null，所以直接返回一个没有正确初始化的uniqueInstance对象。
      */
     private volatile static Singleton3 uniqueInstance;
 
